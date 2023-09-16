@@ -20,14 +20,11 @@ export default function Video() {
     playbackRates: [0.5, 1, 1.5, 2],
     fluid: true,
     sources: [
-      {
-        src: "./Assets/Videos/111.mp4",
-        type: "video/mp4",
-      },
+      // {
+      //   src: "./Assets/Videos/111.mp4",
+      //   type: "video/mp4",
+      // },
     ],
-    // breakpoints: {
-    //   medium: 500,
-    // },
   };
 
   useEffect(() => {
@@ -51,13 +48,13 @@ export default function Video() {
           elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
         </p>
 
-        <div className="video__content">
+        {/* <div className="video__content">
           <video
             id="video-file"
             ref={videoRef}
             className="video-js vjs-big-play-centered  vjs-playback-rate "
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
