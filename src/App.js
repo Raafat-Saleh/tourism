@@ -11,7 +11,7 @@ function App() {
       {
         distance: "60px",
         duration: 2800,
-        //k reset: true,
+        // reset: true,
         // delay: 500,
         origin: "top",
         interval: 100,
