@@ -1,0 +1,70 @@
+/** @format */
+
+.discover__card {
+  position: relative;
+  width: 200px;
+  overflow: hidden;
+}
+.discover__data {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+.discover {
+  margin-bottom: 3rem;
+}
+.discover__title,
+.discover__description {
+  color: var(--white-color);
+}
+.discover__title {
+  font-size: var(--h3-font);
+  margin-bottom: 0.25rem;
+}
+.discover__description {
+  display: block;
+  font-size: var(--smaller-font);
+}
+.discover__img {
+  transition: 0.3s;
+}
+.discover__img:hover {
+  transform: scale(1.1);
+}
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+.swiper-slide {
+  width: 200px !important;
+}
+
+@media screen and (min-width: 766px) {
+  .discover__container {
+    width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .discover__container {
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .swiper-slide {
+    width: 237px !important;
+  }
+  .discover__card {
+    width: 237px;
+  }
+  .discover__container {
+    width: 700px;
+  }
+  .discover__data {
+    left: 1.5rem;
+    bottom: 2rem;
+  }
+  .discover__title {
+    font-size: var(--h2-font);
+  }
+}
