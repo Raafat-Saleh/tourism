@@ -20,10 +20,10 @@ export default function Video() {
     playbackRates: [0.5, 1, 1.5, 2],
     fluid: true,
     sources: [
-      // {
-      //   src: "./Assets/Videos/111.mp4",
-      //   type: "video/mp4",
-      // },
+      {
+        // src: "./Assets/Videos/111.mp4",
+        // type: "video/mp4",
+      },
     ],
   };
 
@@ -33,7 +33,7 @@ export default function Video() {
       if (!videoElement) return;
 
       const player = (playerRef.current = videojs(videoElement, options, () => {
-        // console.log("player is ready");
+        console.log("player is ready");
       }));
     }
   }, [options, videoRef]);
@@ -49,12 +49,12 @@ export default function Video() {
         </p>
 
         {/* <div className="video__content">
-          <video
+          <video 
             id="video-file"
             ref={videoRef}
             className="video-js vjs-big-play-centered  vjs-playback-rate "
-          />
-        </div> */}
+          /> 
+        </div>  */}
       </div>
     </div>
   );
